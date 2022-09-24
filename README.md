@@ -12,7 +12,7 @@ Some students forget to change their zoom name to their full name.
 This program tries to match ambiguous students to their
 real names.
 
-## How tp use this?
+## Instructions:
 
 1. Download the participants list csv file from zoom 
 ([instructions](https://support.zoom.us/hc/en-us/articles/360039017432-Dashboard-for-meetings-and-webinars))
