@@ -9,14 +9,14 @@ def open_file(file_path):
     opens and reads file
     '''
 
-    # exception handling!!
+
     return open(file_path)
 
 
 def get_names_from_file(file):
     '''
     (file object) => String[]
-    cleans file so that only the names remain
+    Files are cleaned to only maintain the names
     '''
     file_lines = file.read().splitlines()
     student_names = []
@@ -25,7 +25,7 @@ def get_names_from_file(file):
         if i == 0:
             continue
         line = file_lines[i]
-        # https://stackabuse.com/regex-splitting-by-character-unless-in-quotes/
+
         split_line = re.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", line)
         is_participants_file = len(split_line[0]) != 0
         if is_participants_file:
@@ -103,7 +103,7 @@ def find_real_name(user_name):
     return match
 
 
-# https://www.geeksforgeeks.org/python-program-for-binary-search/
+
 def binary_search(arr, x):
     low = 0
     high = len(arr) - 1
